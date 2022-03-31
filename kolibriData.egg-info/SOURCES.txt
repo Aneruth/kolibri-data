@@ -1,7 +1,0 @@
-LICENCE.txt
-README.md
-setup.py
-kolibriData.egg-info/PKG-INFO
-kolibriData.egg-info/SOURCES.txt
-kolibriData.egg-info/dependency_links.txt
-kolibriData.egg-info/top_level.txt
