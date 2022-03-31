@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name="kolibriData",
-    version = 0.1,
+    version = 0.2,
     author="Aneruth",
     author_email="ane1998@gmail.com",
     include_package_data=True,
@@ -19,7 +19,7 @@ setuptools.setup(
         # If any package contains *.txt or *.rst files, include them:
         '': ['*.txt', '*.rst', '*.json', '*.npy', '*.db'],
     },
-    packages=setuptools.find_packages(exclude=['data', '*.data', '*.data.*']),
+    packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
