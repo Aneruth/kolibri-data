@@ -3,29 +3,11 @@ from setuptools import setup,find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setup(
-    name="kolibridata",
-    version="0.1",
-    author="Aneruth,Mohamed Ben Haddou",
-    author_email="ane1998@gmail.com,mbenhaddou@mentis.io",
-    description="A report package for kolibri-ml",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/Aneruth/kolibri-data",
-    project_urls={
-        "Bug Tracker": "https://github.com/Aneruth/kolibri-data/issues",
-    },
-    package_data={
-        # If any package contains *.txt or *.rst files, include them:
-        '': ['*.txt', '*.rst', '*.json', '*.npy', '*.db'],
-    },
-    packages=find_packages(),
-    include_package_data=True,
-    classifiers=[
-        "Programming Language :: Python :: 3.7",
-        "Operating System :: OS Independent",
-        'Development Status :: 1 - Planning',
-        'Intended Audience :: Developers',
-    ],
-    python_requires='>=3.7',
-)
+    setup(name='kolibridata',
+        version='0.1',
+        packages=find_packages(),
+        author='Aneruth',
+        author_email='ane1998@gmail.com',
+        url='https://github.com/Aneruth/kolibri-data',
+        package_data={'kolibridata': ['config/*.tmpl']},
+    )

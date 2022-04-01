@@ -1,0 +1,2 @@
+global-exclude data/datasets *
+global-exclude data/report *
